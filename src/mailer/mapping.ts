@@ -4,7 +4,7 @@ export default {
     subtitle: '您好，您申請的需求等待審核中，謹此通知。<br>Hereby notify you that your request is pending for approval.'
   },
   newNotify: {
-    subject: '【ReqM】新需求等待簽閱 request is pending for approval',
+    subject: '【ReqM】新需求等待簽閱 Request is pending for approval',
     subtitle: '您好，您有一條需求等待審核中，請記得上系統完成簽閱，謹此通知。<br>Hereby notify you that there\'s a new request, please approve it.'
   },
   newApproved: {
@@ -12,19 +12,19 @@ export default {
     subtitle: '您好，此需求已被審核通過，謹此通知。<br>Hereby notify you that this request has been approved.'
   },
   newRejected: {
-    subject: '【ReqM】需求不成立通知 request has been rejected',
+    subject: '【ReqM】需求不成立通知 Request has been rejected',
     subtitle: '您好，此需求審核不通過，謹此通知。<br>Hereby notify you that this request has been rejected.'
   },
   newReturned: {
-    subject: '【ReqM】需求退回通知 request has been returned',
+    subject: '【ReqM】需求退回通知 Request has been returned',
     subtitle: '您好，此需求已被退回，請記得上系統修改後再送出審核，謹此通知。<br>Hereby notify you that this request has been returned, please submit it again after it\'s edited.'
   },
   edit: {
-    subject: '【ReqM】需求修改成功通知 request has been editted successfully',
+    subject: '【ReqM】需求修改成功通知 Request has been editted successfully',
     subtitle: '您好，此需求已修改完畢，等待重新審核中，謹此通知。<br>Hereby notify you that this request has been editted, and it is pending for approval.'
   },
   editNotify: {
-    subject: '【ReqM】需求等待簽閱 request is pending for approval',
+    subject: '【ReqM】需求等待簽閱 Request is pending for approval',
     subtitle: '您好，此需求已修改完畢，請記得上系統完成簽閱，謹此通知。<br>Hereby notify you that there\'s an editted request, please approve it.'
   },
   evidenceUAT1: {
@@ -76,7 +76,7 @@ export default {
     subtitle: '您好，您有一條需求的 release 證明已被簽閱通過，謹此通知。<br>Hereby notify you that release evidence of this request had been approved.'
   },
   done: {
-    subject: '【ReqM】需求結案通知 request had been closed',
+    subject: '【ReqM】需求結案通知 Request had been closed',
     subtitle: '您好，您的 request 已結案，謹此通知。<br>Hereby notify you that your request had been closed.'
   },
   cancel: {
@@ -88,7 +88,7 @@ export default {
     subtitle: '您好，您有一條需求取消申請等待被簽核，提醒您記得至系統完成簽核作業，謹此通知。<br>Hereby notify you that cancellation of this request is pending approval.'
   },
   cancelApproved: {
-    subject: '【ReqM】需求取消通知 request is cancelled',
+    subject: '【ReqM】需求取消通知 Request is cancelled',
     subtitle: '您好，此需求已被取消，謹此通知。<br>Hereby notify you that this request is cancelled.'
   },
   cancelRejected: {
@@ -96,11 +96,11 @@ export default {
     subtitle: '您好，此需求的取消申請已被退回，需求將持續進行，謹此通知。<br>Hereby notify you that cancellation of this request is rejected. Please keep this request going.'
   },
   reportDelay: {
-    subject: '【ReqM】delayed requests report',
+    subject: '【ReqM】Delayed requests report',
     subtitle: '以下為已過期、被計點的需求: '
   },
   reportNoDelay: {
-    subject: '【ReqM】delayed requests report',
+    subject: '【ReqM】Delayed requests report',
     subtitle: '本週沒有過期、被記點的 requests'
   }
 };

@@ -1,9 +1,9 @@
 import { Controller, Get } from '@overnightjs/core';
 import { Request, Response } from 'express';
-import { getByStatus, getPendings } from '@/controllers/request';
+import { getByStatus, getPendings } from '@/controllers/user-request';
 
 @Controller('requests')
-export class RequestsRouter {
+export class UserRequestsRouter {
   /**
    * @description 取得多筆需求資料 (如果需要依照狀態查詢, 請加上 query, e.g. /requests?status=Proceeding)
    */

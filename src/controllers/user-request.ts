@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import StatusCodes from 'http-status-codes';
 import { TRequest } from '~/request';
 import { ValidationError, DataNotFoundError, CustomError } from '@/errors/index';
-import reqModel, { IRequest } from '@/models/request';
+import reqModel, { IRequest } from '@/models/user-request';
 import userModel from '@/models/user';
 import validator from '@/util/validator/index';
 import getReqNo from '@/util/request/request-number';
@@ -473,6 +473,7 @@ export const getByStatus = async (req: Request, res: Response): Promise<void> =>
     //2. 如果有資料, 開始修改要傳回前端的資料
     const modifieds: any[] = [];
     if (requests?.length) {
+
       /**
        * @description 判斷需求是否已過期未更新
        * @param { Date } exp 該驗收階段的 expect date
@@ -564,10 +565,12 @@ export const getByStatus = async (req: Request, res: Response): Promise<void> =>
           cancelDate: request.status === 'Cancel' ? dateFormatter(request.cancel?.applyDate, 'full') : null,
           thisWeek: request.thisWeek
         };
+
         const today = dateFormatter(new Date(), 'full');
 
         //3-3. 當需求狀態為 'Done' | 'Cancel' | 'Rejected' 時, 判斷其是否在今天結案
         if (request.status === 'Done') {
+
           switch (request.type) {
             case 'OneTime': {
               const reviewDateUAT2 = dateFormatter(request.UAT2Logs?.reviewDate, 'full');

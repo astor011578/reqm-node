@@ -6,13 +6,17 @@ enum ExitStatus {
 }
 
 process.on('unhandledRejection', (reason, promise) => {
-  console.error(`App exiting due to an unhandled promise: ${promise} and reason: ${reason}`);
+  console.error('[Error] App exiting due to an unhandled promise:');
+  console.error(promise);
+  console.error('\n[Error] and reason:');
+  console.error(reason);
   //throw the error and let the uncaughtException handle below handle it
   throw reason;
 });
 
 process.on('uncaughtException', (error) => {
-  console.error(`App exiting due to an uncaught exception: ${error}`);
+  console.error('[Error] App exiting due to an uncaught exception:');
+  console.error(error);
   process.exit(ExitStatus.Failure);
 });
 
@@ -27,16 +31,20 @@ process.on('uncaughtException', (error) => {
       process.on(exitSignal, async () => {
         try {
           await server.close();
-          console.info(`App exited with success`);
+          console.info('[Info] App exited with success');
           process.exit(ExitStatus.Success);
+
         } catch (error) {
-          console.error(`App exited with error: ${error}`);
+          console.error('[Error] App exited with error:');
+          console.error(error);
           process.exit(ExitStatus.Failure);
         }
       });
     }
+
   } catch (error) {
-    console.error(`App exited with error: ${error}`);
+    console.error('[Error] App exited with error:');
+    console.error(error);
     process.exit(ExitStatus.Failure);
   }
 })();

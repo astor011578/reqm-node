@@ -2,8 +2,8 @@ import { getEnv } from '@/util/env-variables';
 const NODE_ENV = getEnv('NODE_ENV');
 const DOMAIN_NAME = NODE_ENV === 'dev' ? getEnv('DOMAIN_NAME_DEV') : getEnv('DOMAIN_NAME_PROD');
 const PORT = getEnv('FRONT_PORT');
-const FRONT_NAME = getEnv('FRONT_NAME');
-const FRONT_URL = NODE_ENV === 'dev' ? `http://${DOMAIN_NAME}:${PORT}/${FRONT_NAME}` : `https://${DOMAIN_NAME}/${FRONT_NAME}`;
+const FRONT_NAME = NODE_ENV === 'dev' ? getEnv('FRONT_NAME_DEV') : getEnv('FRONT_NAME_PROD');
+const FRONT_URL = NODE_ENV === 'dev' ? `https://${DOMAIN_NAME}:${PORT}${FRONT_NAME}` : `https://${DOMAIN_NAME}/${FRONT_NAME}`;
 
 export type TMailInfo = {
   title: string,
@@ -38,7 +38,7 @@ export default async (subtitle: string, info: TMailInfo[]): Promise<string> => {
         html = html.concat(
           `<tr>
             <td style="padding: 3pt; width: 100pt; border: 1pt solid gray; background-color: navy; color: #ffffff;"><b>${item.title}</b></td>
-            <td style="padding: 3pt; width: 300pt; border: 1pt solid gray;"><a href="${FRONT_URL}/#/detail/${item.value}" target="_blank">${item.value}</a></td>
+            <td style="padding: 3pt; width: 300pt; border: 1pt solid gray;"><a href="${FRONT_URL}#/detail/${item.value}" target="_blank">${item.value}</a></td>
           </tr>`
         );
       } else {

@@ -1,4 +1,4 @@
-import reqModel from '@/models/request';
+import reqModel from '@/models/user-request';
 import { logger } from '@/util/schedule/info-logger';
 
 /**

@@ -1,13 +1,13 @@
 import { Controller, Get, Post, Patch } from '@overnightjs/core';
 import { Request, Response } from 'express';
-import { newReq, revReq, editReq, getByReqNo } from '@/controllers/request';
+import { newReq, revReq, editReq, getByReqNo } from '@/controllers/user-request';
 import {
   rescheduleReq, updateEvidence, reviewEvidence,
   applyCancellation, reviewCancellation
 } from '@/controllers/update-request';
 
 @Controller('request')
-export class RequestRouter {
+export class UserRequestRouter {
   /**
    * @description 取得一筆需求資料
    */

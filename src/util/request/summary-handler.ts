@@ -1,6 +1,6 @@
 import { Types } from 'mongoose';
 import { TSummary } from '~/summary';
-import reqModel from '@/models/request';
+import reqModel from '@/models/user-request';
 import sumModel, { ISummary } from '@/models/summary';
 import { getWeekString } from '@/util/request/week-string';
 

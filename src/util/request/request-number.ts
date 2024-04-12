@@ -1,5 +1,5 @@
 import { StatusCodes } from 'http-status-codes';
-import reqModel, { IRequest } from '@/models/request';
+import reqModel, { IRequest } from '@/models/user-request';
 import { getDateString } from '@/util/request/date-string';
 import { CustomError } from '@/errors/index';
 

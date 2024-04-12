@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import StatusCodes from 'http-status-codes';
 import { TUploadFile } from '~/request';
 import { DataNotFoundError, CustomError } from '@/errors/index';
-import reqModel from '@/models/request';
+import reqModel from '@/models/user-request';
 import validator from '@/util/validator/index';
 import { dateFormatter } from '@/util/request/date-string';
 import removeFile from '@/util/request/remove-file';
