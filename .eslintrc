@@ -1,0 +1,41 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2022": true
+  },
+  "extends": [
+    // "standard-with-typescript",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "env": {
+        "node": true
+      },
+      "files": [
+        ".eslintrc.{js,cjs}"
+      ],
+      "parserOptions": {
+        "sourceType": "script"
+      }
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "no-console": 0,
+    "no-useless-catch": ["off"],
+    "semi": ["error", "always"],
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "@typescript-eslint/no-unused-vars": ["off"]
+  }
+}

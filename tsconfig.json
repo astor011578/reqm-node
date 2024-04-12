@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "lib": ["es2019"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./src/*"],
+      "~/*": ["./src/types/*"],
+      "$/*": ["./test/*"]
+    },
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "rootDirs": [
+      "./src",
+      "./test"
+    ],
+    "sourceMap": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "target": "es2020",
+  },
+  "exclude": [
+    "node_modules",
+    "**/dist",
+    "key-generator.js"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "tsc-alias": {
+    "resolveFullPaths": true
+  }
+}

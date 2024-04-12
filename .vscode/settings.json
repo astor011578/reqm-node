@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": true,                //儲存檔案自動format
+  "javascript.format.semicolons": "insert",   //針對.js檔案，強制必須有分號，設定`remove`則禁止分號
+  "typescript.format.semicolons": "insert",   //針對.ts檔案，同上
+  "editor.tabSize": 2,                        //設定預設縮排為2個空格
+  "editor.detectIndentation": false,          //是否強制所有檔案按tabSize設定縮排；"否"則根據檔案內容縮排、新建檔案按tabSize縮排。
+  "files.insertFinalNewline": true,           //所有檔案末尾留一空行
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"    //設定js型別檔案的預設format為VSCode自帶Format
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"    //設定ts型別檔案的預設format為VSCode自帶Format
+  }
+}
