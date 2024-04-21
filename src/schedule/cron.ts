@@ -2,7 +2,6 @@ import cron from 'node-cron';
 import updateThisWeek from './task/update-thisWeek';
 import newReqSummary from './task/new-request-summary';
 import checkDelayReq from './task/check-delay-request';
-import moveLogFiles from './task/move-log-files';
 
 export default async () => {
   /**
@@ -28,12 +27,6 @@ export default async () => {
   cron.schedule('59 15 * * 4', async () => {
     //檢查每個需求是否已過期, 過期會記點
     await checkDelayReq();
-  });
-
-  //每月 1 號 00:00:30 執行
-  cron.schedule('30 0 0 1 * *', async () => {
-    //將上個月的 log 檔移入當月資料夾中
-    await moveLogFiles();
   });
 
   console.log('[Info] 定時排程任務');

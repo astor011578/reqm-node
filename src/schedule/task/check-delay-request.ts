@@ -62,7 +62,7 @@ export default async () => {
           //2-4-3. 將更改的內容記錄到此 doc 中
           await delayDoc!.save();
 
-          info.push({ title: 'IT #', value: reqNo, isLink: true });
+          info.push({ title: 'ReqNo', value: reqNo, isLink: true });
           info.push({ title: 'Stage', value: delayStep, isLink: false });
         }
       }

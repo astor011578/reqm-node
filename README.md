@@ -2,9 +2,7 @@
 
 ## Documents
 
-- [API Documentation](https://www.notion.so/API-Documentation-0b80d9faaa5943319805d00ce4cc8568?pvs=4)
-
-- [Table Specification](https://www.notion.so/Table-Specification-69ebdfe8fb1f473b8206394cb5d5b50c?pvs=4)
+- [API Documentation](https://documenter.getpostman.com/view/19598723/2sA3BobC6P)
 
 ## Build Setup
 

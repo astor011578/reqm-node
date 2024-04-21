@@ -20,7 +20,7 @@ export default async (req: Request, res: Response): Promise<void> => {
     const timeLimit = 60 * 60 * 6; //六小時後失效
     const exp = Math.floor(Date.now() / 1000) + timeLimit; //單位為秒
     const payload = {
-      iss: 'irs',
+      iss: 'reqm',
       sub: userId,
       roles
     };

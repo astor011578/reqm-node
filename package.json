@@ -9,7 +9,7 @@
     "clean": "rimraf dist",
     "build": "npm run clean && tsc",
     "build:watch": "tsc --watch",
-    "dev": "set NODE_ENV=dev && ts-node src/index.ts",
+    "dev": "set NODE_ENV=dev && nodemon src/index.ts",
     "prod": "set NODE_ENV=prod && node dist/index.js",
     "start": "npm run prod",
     "debug": "node --inspect-brk dist/index.js",
@@ -79,6 +79,7 @@
     "eslint-plugin-prettier": "^5.0.1",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
+    "nodemon": "^3.1.0",
     "prettier": "^3.1.0",
     "rimraf": "^5.0.5"
   }

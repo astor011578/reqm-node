@@ -1,0 +1,4100 @@
+{
+	"info": {
+		"_postman_id": "86af0bbd-cfd6-4b64-b7c6-5b2b96171d27",
+		"name": "ReqM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19598723"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"101785\",\r\n    \"password\": \"P@55w0rd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/login",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"101785\",\r\n    \"password\": \"P@55w0rd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/login",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Authorization",
+									"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlzcyI6ImlycyIsInN1YiI6IjEwMTc4NSIsInJvbGVzIjpbIkFkZCByZXF1ZXN0IiwiUmV2aWV3IHJlcXVlc3QiLCJBZG1pbmlzdHJhdG9yIl19LCJleHAiOjE3MDUwMDg1MjEsImlhdCI6MTcwNDk4NjkyMX0.XbEJjh80WzZLOgIf7g27lmgrlG1waCPTPI6tSivpoGjYONqsFmiXszDSlDBQUICypDeeIYuNgYzoyfXfcit5EGUgYc-Gztcpx0IAOIuQMyu9bxwJuFWS5AqI2oLnkhuBxT5bziLz0eSLvkv8bv-iD7uGU77mTj1-B-ysGygvtKb9Bu3HjTdkKIBludMQOzzIlhQkk1RxPG9Wp2rqSuJduWnaqW2wR6ZLMg-lam41zJIBW4Dgde63dEywa2-3y-dFpuMNgsGfzDUlCj5jTikYhPbcAzWpFVgVS45_EUluP3DgCsylihPxdFSS3nBZwcmmxnXpHcVwpHux2j4zH2AAGTO-TxDr0cjN5UZwrQqfDn4odBldL5udpqKPD1QNooHFIHJeSWQiPz2v3_3gwBuodT-IzA47uev4HopRsiNHhgI4bOaJ-jqHD4-av8BjolkMoa7OTWACUEhDPvUs12WxAKrKBkkrK3mhKjE2tkYxlhctQNg5fqKLRO-eT0Sm0TYWTCBDVhrbrtxK1H3F98QnnfoOiuV_4_Jyk_dNahB5TbHw6Zkw8RUwgz-de_kK1AmKYmv4c4vaGAACJAfIFkCMaKjPs6Or9-mVQ3J3wy2LFLtJaX4hNCjD7SfL9ZduLllexXfUJiQlXU0Ea8P92G8am6JLjYXmlTF2ipZFzFecnVo"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "996"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3e4-2TXm64kW6EtRnq1Xe23cgc4ducI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:28:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Account 101785 was logged in successfully\",\n    \"authorization\": \"Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlzcyI6ImlycyIsInN1YiI6IjEwMTc4NSIsInJvbGVzIjpbIkFkZCByZXF1ZXN0IiwiUmV2aWV3IHJlcXVlc3QiLCJBZG1pbmlzdHJhdG9yIl19LCJleHAiOjE3MDUwMDg1MjEsImlhdCI6MTcwNDk4NjkyMX0.XbEJjh80WzZLOgIf7g27lmgrlG1waCPTPI6tSivpoGjYONqsFmiXszDSlDBQUICypDeeIYuNgYzoyfXfcit5EGUgYc-Gztcpx0IAOIuQMyu9bxwJuFWS5AqI2oLnkhuBxT5bziLz0eSLvkv8bv-iD7uGU77mTj1-B-ysGygvtKb9Bu3HjTdkKIBludMQOzzIlhQkk1RxPG9Wp2rqSuJduWnaqW2wR6ZLMg-lam41zJIBW4Dgde63dEywa2-3y-dFpuMNgsGfzDUlCj5jTikYhPbcAzWpFVgVS45_EUluP3DgCsylihPxdFSS3nBZwcmmxnXpHcVwpHux2j4zH2AAGTO-TxDr0cjN5UZwrQqfDn4odBldL5udpqKPD1QNooHFIHJeSWQiPz2v3_3gwBuodT-IzA47uev4HopRsiNHhgI4bOaJ-jqHD4-av8BjolkMoa7OTWACUEhDPvUs12WxAKrKBkkrK3mhKjE2tkYxlhctQNg5fqKLRO-eT0Sm0TYWTCBDVhrbrtxK1H3F98QnnfoOiuV_4_Jyk_dNahB5TbHw6Zkw8RUwgz-de_kK1AmKYmv4c4vaGAACJAfIFkCMaKjPs6Or9-mVQ3J3wy2LFLtJaX4hNCjD7SfL9ZduLllexXfUJiQlXU0Ea8P92G8am6JLjYXmlTF2ipZFzFecnVo\"\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //lack required value in request body, which is 'password' in this example.\r\n    \"userId\": \"101785\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/login",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "68"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"44-XKKmu9zd4EjatF8WUKC2OUxv7CE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:29:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"password cannot be null or undefined\"\n}"
+						},
+						{
+							"name": "401 Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //Incorrect user information.\r\n    \"userId\": \"123457\",\r\n    \"password\": \"P@55w0rd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/login",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"50-ZW8eDzca007VJe7yTdt8+Yh2obI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:29:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"Incorrect userId. Or 123457 data cannot be found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"101785\",\r\n    \"password\": \"P@55w0rd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/login",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/logout",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-/LZdJcTvoZgqKVyYr6Nrhz2+3ug\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:30:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Logout successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlzcyI6ImlycyIsInN1YiI6IjEwMTc4NSIsInJvbGVzIjpbIkFkZCByZXF1ZXN0IiwiUmV2aWV3IHJlcXVlc3QiLCJBZG1pbmlzdHJhdG9yIl19LCJleHAiOjE3MDUwMDg1MjEsImlhdCI6MTcwNDk4NjkyMX0.XbEJjh80WzZLOgIf7g27lmgrlG1waCPTPI6tSivpoGjYONqsFmiXszDSlDBQUICypDeeIYuNgYzoyfXfcit5EGUgYc-Gztcpx0IAOIuQMyu9bxwJuFWS5AqI2oLnkhuBxT5bziLz0eSLvkv8bv-iD7uGU77mTj1-B-ysGygvtKb9Bu3HjTdkKIBludMQOzzIlhQkk1RxPG9Wp2rqSuJduWnaqW2wR6ZLMg-lam41zJIBW4Dgde63dEywa2-3y-dFpuMNgsGfzDUlCj5jTikYhPbcAzWpFVgVS45_EUluP3DgCsylihPxdFSS3nBZwcmmxnXpHcVwpHux2j4zH2AAGTO-TxDr0cjN5UZwrQqfDn4odBldL5udpqKPD1QNooHFIHJeSWQiPz2v3_3gwBuodT-IzA47uev4HopRsiNHhgI4bOaJ-jqHD4-av8BjolkMoa7OTWACUEhDPvUs12WxAKrKBkkrK3mhKjE2tkYxlhctQNg5fqKLRO-eT0Sm0TYWTCBDVhrbrtxK1H3F98QnnfoOiuV_4_Jyk_dNahB5TbHw6Zkw8RUwgz-de_kK1AmKYmv4c4vaGAACJAfIFkCMaKjPs6Or9-mVQ3J3wy2LFLtJaX4hNCjD7SfL9ZduLllexXfUJiQlXU0Ea8P92G8am6JLjYXmlTF2ipZFzFecnVo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/auth",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlzcyI6ImlycyIsInN1YiI6IjEwMTc4NSIsInJvbGVzIjpbIkFkZCByZXF1ZXN0IiwiUmV2aWV3IHJlcXVlc3QiLCJBZG1pbmlzdHJhdG9yIl19LCJleHAiOjE3MDUwMDg1MjEsImlhdCI6MTcwNDk4NjkyMX0.XbEJjh80WzZLOgIf7g27lmgrlG1waCPTPI6tSivpoGjYONqsFmiXszDSlDBQUICypDeeIYuNgYzoyfXfcit5EGUgYc-Gztcpx0IAOIuQMyu9bxwJuFWS5AqI2oLnkhuBxT5bziLz0eSLvkv8bv-iD7uGU77mTj1-B-ysGygvtKb9Bu3HjTdkKIBludMQOzzIlhQkk1RxPG9Wp2rqSuJduWnaqW2wR6ZLMg-lam41zJIBW4Dgde63dEywa2-3y-dFpuMNgsGfzDUlCj5jTikYhPbcAzWpFVgVS45_EUluP3DgCsylihPxdFSS3nBZwcmmxnXpHcVwpHux2j4zH2AAGTO-TxDr0cjN5UZwrQqfDn4odBldL5udpqKPD1QNooHFIHJeSWQiPz2v3_3gwBuodT-IzA47uev4HopRsiNHhgI4bOaJ-jqHD4-av8BjolkMoa7OTWACUEhDPvUs12WxAKrKBkkrK3mhKjE2tkYxlhctQNg5fqKLRO-eT0Sm0TYWTCBDVhrbrtxK1H3F98QnnfoOiuV_4_Jyk_dNahB5TbHw6Zkw8RUwgz-de_kK1AmKYmv4c4vaGAACJAfIFkCMaKjPs6Or9-mVQ3J3wy2LFLtJaX4hNCjD7SfL9ZduLllexXfUJiQlXU0Ea8P92G8am6JLjYXmlTF2ipZFzFecnVo",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{localhost}}/auth",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "211"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d3-5dBs7GbTGB9QSwexffPk+8XIsXE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:31:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Account 101785's token was verified successfully\",\n    \"data\": {\n        \"iss\": \"reqm\",\n        \"exp\": 1705008521,\n        \"iat\": 1704986921,\n        \"roles\": [\n            \"Add request\",\n            \"Review request\",\n            \"Administrator\"\n        ],\n        \"userId\": \"101785\"\n    }\n}"
+						},
+						{
+							"name": "401 No Authorization header",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/auth",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"49-EighkXFikfpk3fgb4dfOGtfHWC0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:33:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"Authorization cannot be null or undefined\"\n}"
+						},
+						{
+							"name": "401 Malformed JWT",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eXlsb2FkIjp7ImlzcyI6ImlycyIsInN1YiI6IjEwMTc4NSIsInJvbGVzIjpbIkFkZCByZXF1ZXN0IiwiUmV2aWV3IHJlcXVlc3QiLCJBZG1pbmlzdHJhdG9yIl19LCJleHAiOjE3MDUwMDg1MjEsImlhdCI6MTcwNDk4NjkyMX0.XbEJjh80WzZLOgIf7g27lmgrlG1waCPTPI6tSivpoGjYONqsFmiXszDSlDBQUICypDeeIYuNgYzoyfXfcit5EGUgYc-Gztcpx0IAOIuQMyu9bxwJuFWS5AqI2oLnkhuBxT5bziLz0eSLvkv8bv-iD7uGU77mTj1-B-ysGygvtKb9Bu3HjTdkKIBludMQOzzIlhQkk1RxPG9Wp2rqSuJduWnaqW2wR6ZLMg-lam41zJIBW4Dgde63dEywa2-3y-dFpuMNgsGfzDUlCj5jTikYhPbcAzWpFVgVS45_EUluP3DgCsylihPxdFSS3nBZwcmmxnXpHcVwpHux2j4zH2AAGTO-TxDr0cjN5UZwrQqfDn4odBldL5udpqKPD1QNooHFIHJeSWQiPz2v3_3gwBuodT-IzA47uev4HopRsiNHhgI4bOaJ-jqHD4-av8BjolkMoa7OTWACUEhDPvUs12WxAKrKBkkrK3mhKjE2tkYxlhctQNg5fqKLRO-eT0Sm0TYWTCBDVhrbrtxK1H3F98QnnfoOiuV_4_Jyk_dNahB5TbHw6Zkw8RUwgz-de_kK1AmKYmv4c4vaGAACJAfIFkCMaKjPs6Or9-mVQ3J3wy2LFLtJaX4hNCjD7SfL9ZduLllexXfUJiQlXU0Ea8P92G8am6JLjYXmlTF2ipZFzFecnVo",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{localhost}}/auth",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "45"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d-NkNsF3XybEaPPmmuyNHIKouqjh0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:34:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"jwt malformed\"\n}"
+						},
+						{
+							"name": "401 Expired JWT",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlzcyI6ImlycyIsInN1YiI6IjEwMTc4NSIsInJvbGVzIjpbIkFkZCByZXF1ZXN0IiwiUmV2aWV3IHJlcXVlc3QiLCJBZG1pbmlzdHJhdG9yIl19LCJleHAiOjE3MDQ5ODczNDcsImlhdCI6MTcwNDk4NzM0Nn0.jQz_CD6cQM-68uVLNMh7KzIF1aIpc2NMMtV3PtRAEV19r_7v4nbIwZ-deHqaAUcYDUkSJwKufupw6ucvE6mBhnkPrigknXWDj0Wk7hLTJYQU1KUPxLhdOvuUsKJlum5ZTlV9GQ0y50s3HRofe_Pn2RWqYO9qtFtEIezqP5oFfJR8m9IjSaG1VTCuGxEcoRtKVCRIDBSJwbhxo3p39NdslJSDw02Zneaxsf12e6V32_AZeadPxfw0dt0QWk5dVzt3nwnzKL_MKS1lA-F454VTna9gAGljrVexgdqOi1TfDUnFyAwdk2mj32rwapLzdp3WsJI_x53Wv_Uc9ji-zCtYdLD5CWUerJbQTClcVJmFuidWl71j_1hJg1ZHE1Hxf0O5-j1Z33Q991_junc-ZtiIXa-CB3cV23zMe_SpuaU9TPobrByZap7jiLPwnU0uoDQvDGyExaqtuaOc4hfUG2ZfKIMMIM-K1tkduaVRLxMBLBqYp-KqJcQRCKeyHux2-9UgTWtTnjv153r39I-zfavh6RZLlcwKFvskrmx8SOSi3hwZAZ3i_4kRTMWINZZTYhZ0lWXEqHO2SNy4z61eSYdNKqyphAaLEZ9-x4cp5btnLlUaSZnXBeDJLgzAUklqluiyDzuh5zlH0wC0A4e-Lfqf4_0rcbgZE61LIJeNpqq2Vdo",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{localhost}}/auth",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b-2+iT0+2uS+1bS3Kp2rMzBnO5JPY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:35:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"jwt expired\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/users?dept=IT",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "dept",
+									"value": "IT"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/users",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1084"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43c-nuLvljE9K0h34ubMgYSICyn0E/U\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:03:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Search all users successfully\",\n    \"data\": [\n        {\n            \"isResigned\": false,\n            \"userId\": \"101785\",\n            \"email\": \"astor011578@gmail.com\",\n            \"nameEn\": \"Astor Yang\",\n            \"dept\": \"IT\",\n            \"roles\": [\n                \"Add request\",\n                \"Review request\",\n                \"Administrator\"\n            ],\n            \"createdAt\": \"2023-11-29T07:40:07.337Z\"\n        },\n        {\n            \"isResigned\": false,\n            \"userId\": \"101000\",\n            \"email\": \"kirisaki.nozomi@gmail.com\",\n            \"nameEn\": \"Bugcat Capoo\",\n            \"dept\": \"IT\",\n            \"roles\": [\n                \"Add request\",\n                \"Review request\"\n            ],\n            \"createdAt\": \"2023-11-29T07:40:07.337Z\",\n            \"nameZh\": \"貓貓蟲咖波\"\n        },\n        {\n            \"isResigned\": false,\n            \"userId\": \"97657\",\n            \"email\": \"y.hakana@gmail.com\",\n            \"nameEn\": \"Naruto Uzumaki\",\n            \"dept\": \"Sales\",\n            \"roles\": [\n                \"Add request\"\n            ],\n            \"createdAt\": \"2023-11-29T07:40:07.337Z\",\n            \"nameZh\": \"漩渦鳴人\"\n        },\n        {\n            \"isResigned\": false,\n            \"userId\": \"100374\",\n            \"email\": \"y.hakana@gmail.com\",\n            \"nameEn\": \"Sakura Uchiha\",\n            \"dept\": \"Sales\",\n            \"roles\": [\n                \"Add request\"\n            ],\n            \"createdAt\": \"2023-11-29T07:40:07.337Z\",\n            \"nameZh\": \"宇智波櫻\"\n        },\n        {\n            \"isResigned\": false,\n            \"userId\": \"91495\",\n            \"email\": \"y.hakana@gmail.com\",\n            \"nameEn\": \"Sasuke Uchiha\",\n            \"dept\": \"Sales\",\n            \"roles\": [\n                \"Add request\"\n            ],\n            \"createdAt\": \"2023-11-29T07:40:07.337Z\",\n            \"nameZh\": \"宇智波佐助\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Get users by dept",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/users?dept=IT",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"users"
+									],
+									"query": [
+										{
+											"key": "dept",
+											"value": "IT"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "500"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f4-vgsuF6sgoJsk5ZfVtx8Pi+ZoGHc\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:03:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Search IT department users successfully\",\n    \"data\": [\n        {\n            \"isResigned\": false,\n            \"userId\": \"101785\",\n            \"email\": \"astor011578@gmail.com\",\n            \"nameEn\": \"Astor Yang\",\n            \"dept\": \"IT\",\n            \"roles\": [\n                \"Add request\",\n                \"Review request\",\n                \"Administrator\"\n            ],\n            \"createdAt\": \"2023-11-29T07:40:07.337Z\"\n        },\n        {\n            \"isResigned\": false,\n            \"userId\": \"101000\",\n            \"email\": \"kirisaki.nozomi@gmail.com\",\n            \"nameEn\": \"Bugcat Capoo\",\n            \"dept\": \"IT\",\n            \"roles\": [\n                \"Add request\",\n                \"Review request\"\n            ],\n            \"createdAt\": \"2023-11-29T07:40:07.337Z\",\n            \"nameZh\": \"貓貓蟲咖波\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/user/101785",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"101785"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/user/101785",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"101785"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "277"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"115-kzplmkKdnYiaf8JOXbpzvBaEB8k\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:04:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Search user 101785 data successfully\",\n    \"data\": {\n        \"isResigned\": false,\n        \"userId\": \"101785\",\n        \"email\": \"astor011578@gmail.com\",\n        \"nameEn\": \"Astor Yang\",\n        \"dept\": \"IT\",\n        \"roles\": [\n            \"Add request\",\n            \"Review request\",\n            \"Administrator\"\n        ],\n        \"createdAt\": \"2023-11-29T07:40:07.337Z\"\n    }\n}"
+						},
+						{
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/user/125648",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"125648"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "66"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"42-oP20XncXCDblzY4V8w4bY4xRBbk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:04:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"userId 125648 data cannot be found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Register user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"P@55w0rd\",\r\n    \"dept\": \"Sales\",\r\n    \"email\": \"y.hakana@gmail.com\",\r\n    \"nameEn\": \"Test Account\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/user/register/999999",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"register",
+								"999999"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"999999\",\r\n    \"dept\": \"Sales\",\r\n    \"email\": \"y.hakana@gmail.com\",\r\n    \"nameEn\": \"Test Account\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/register/999999",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"register",
+										"999999"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "71"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"47-AhvDWExomKgGwm8f0nu5cevtv4g\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Apr 2024 03:00:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Account 999999 registered successfully\"\n}"
+						},
+						{
+							"name": "400 Already registered user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"P@55w0rd\",\r\n    \"dept\": \"IT\",\r\n    \"email\": \"y.hakana@gmail.com\",\r\n    \"nameEn\": \"Astor Yang\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/register/101785",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"register",
+										"101785"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-IsLIVv/D9Fb6PxN8Xjh9MP168mk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:07:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"101785 has been registered\"\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //lack required values in request body, which is 'password' in this example.\r\n    \"dept\": \"IT\",\r\n    \"email\": \"y.hakana@gmail.com\",\r\n    \"nameEn\": \"Astor Yang\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/register/101785",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"register",
+										"101785"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "68"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"44-XKKmu9zd4EjatF8WUKC2OUxv7CE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:12:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"password cannot be null or undefined\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Change user info",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameZh\": \"貓貓蟲咖波\",\r\n    \"email\": \"kirisaki.nozomi@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/user/basic-info/101000",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"basic-info",
+								"101000"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nameZh\": \"貓貓蟲咖波\",\r\n    \"email\": \"kirisaki.nozomi@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/basic-info/101000",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"basic-info",
+										"101000"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "79"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4f-USncJpFqmSV+mB0U4aWu92RDQMU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:12:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"User 101000 data has been updated successfully\"\n}"
+						},
+						{
+							"name": "400 Invalid email format",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nameZh\": \"貓貓蟲咖波\",\r\n    //Invalid email format\r\n    \"email\": \"kirisaki.nozomi\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/basic-info/101000",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"basic-info",
+										"101000"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-Vnbw6537PKGAHFx3HgcVVTgAFwE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:13:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"Invalid email format\"\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //Invalid nameZh format\r\n    \"nameZh\": \"  \"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/basic-info/101000",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"basic-info",
+										"101000"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "64"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"40-HkJcgA0cCmKS1uc3loFpXBEbTXM\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:26:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"nameZh cannot be an empty string\"\n}"
+						},
+						{
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nameZh\": \"貓貓蟲咖波\",\r\n    \"email\": \"kirisaki.nozomi@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/basic-info/156482",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"basic-info",
+										"156482"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "66"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"42-vK0BeMsyx2Kghbf3djNxcoC80og\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:14:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"userId 156482 data cannot be found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Change user roles",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roles\": [\"Add request\", \"Review request\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/user/roles/101000",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"roles",
+								"101000"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roles\": [\"Add request\", \"Review request\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/roles/101000",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"roles",
+										"101000"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "78"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4e-D2uGqLPbHm/fuTaqeza4grx9WAo\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:22:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Changing user 101000 permissions successfully\"\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //Invalid roles format\r\n    \"roles\": 123\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/roles/101000",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"roles",
+										"101000"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4b-ZBndrF6dkEix0vb2l1AmtNMiYwA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:24:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"Invalid roles format, it should be an array\"\n}"
+						},
+						{
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roles\": [\"Add request\", \"Review request\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/roles/456131",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"roles",
+										"456131"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "66"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"42-TheLsk82NI/ncsTT6RJgxqOvzN0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:23:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"userId 456131 data cannot be found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Change user resignation",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isResigned\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/user/resignation/90001",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"resignation",
+								"90001"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isResigned\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/resignation/90001",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"resignation",
+										"90001"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4b-57m0c/uxFaTERi8TYptIemIqKg0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:27:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Changing user 90001 to a resigned employee\"\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isResigned\": 123\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/resignation/90001",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"resignation",
+										"90001"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39-h4ekkQQ9f1HxIHF2l8dZ37coF1U\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:28:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"Invalid isResigned format\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Requests",
+			"item": [
+				{
+					"name": "Upload files",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": [
+										"/C:/Users/User/Downloads/it-req-template.xlsx",
+										"/C:/Users/User/Downloads/Test-IT-Request-System-WI.pdf"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/upload/attached-files",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"upload",
+								"attached-files"
+							]
+						},
+						"description": "The request params `uploadType` can be `attached-files or evidence which is attached-files` in this example.\n\nIf the params `uploadType` is `evidence`, you should pass the `reqNo` and the `step` by using request query. Please refer the example `Upload evidence` to get the detailed usage."
+					},
+					"response": [
+						{
+							"name": "Upload attached files",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "files",
+											"type": "file",
+											"src": [
+												"/C:/Users/User/Downloads/it-req-template.xlsx",
+												"/C:/Users/User/Downloads/Test-IT-Request-System-WI.pdf"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "{{localhost}}/upload/attached-files",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"upload",
+										"attached-files"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "217"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d9-vITMfzcLrahG9hzqvcQvQyJm738\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Dec 2023 17:10:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"success\",\n    \"message\": \"Upload files successfully\",\n    \"data\": [\n        {\n            \"fileName\": \"1703092234581.xlsx\",\n            \"originalName\": \"reqm-template.xlsx\"\n        },\n        {\n            \"fileName\": \"1703092234581.pdf\",\n            \"originalName\": \"ReqM-working-instrument.pdf\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Upload evidence",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "files",
+											"type": "file",
+											"src": "/C:/Users/User/Downloads/UAT1.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{localhost}}/upload/evidence?reqNo=24011101&step=UAT1",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"upload",
+										"evidence"
+									],
+									"query": [
+										{
+											"key": "reqNo",
+											"value": "24011101"
+										},
+										{
+											"key": "step",
+											"value": "UAT1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "124"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7c-uZBWXI7VTSV+rWkBdnpvvyHb/1Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:12:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"success\",\n    \"message\": \"Upload files successfully\",\n    \"data\": [\n        {\n            \"fileName\": \"1704982330362.png\",\n            \"originalName\": \"UAT1.png\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get requests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/requests?status=Weekly",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"requests"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "Weekly"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all requests",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/requests",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"requests"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "8821"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2275-MhTQPyczWvYCw9l6Wq7LMJe7o74\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Apr 2024 10:03:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Get all requests successfully\",\n    \"data\": [\n        {\n            \"reqNo\": 23070701,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 0,\n            \"reqName\": \"Request name #23070701\",\n            \"type\": \"OneTime\",\n            \"plant\": \"P3\",\n            \"reqr\": \"Naruto Uzumaki\",\n            \"pgr\": \"Astor Yang\",\n            \"approveDate\": \"2023/07/07\",\n            \"issueDate\": \"2023/07/07\",\n            \"turnOnDate\": \"7/10\",\n            \"UAT1Exp\": \"7/10\",\n            \"UAT1Act\": \"7/10\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"7/11\",\n            \"UAT2Act\": \"7/11\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"\",\n            \"releaseAct\": \"\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Done\",\n            \"status\": \"Done\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"doneOnToday\": false,\n            \"leadTime\": 6,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23080806,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 3,\n            \"reqName\": \"Request name #23080806\",\n            \"type\": \"Project\",\n            \"plant\": \"P1\",\n            \"reqr\": \"Sasuke Uchiha\",\n            \"pgr\": \"Bugcat Capoo\",\n            \"approveDate\": \"2023/08/08\",\n            \"issueDate\": \"2023/08/08\",\n            \"turnOnDate\": \"8/1\",\n            \"UAT1Exp\": \"8/9\",\n            \"UAT1Act\": \"8/9\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/31\",\n            \"UAT2Act\": \"\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"8/31\",\n            \"releaseAct\": \"\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"8/31\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Wait UAT2\",\n            \"status\": \"Proceeding\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"newOnToday\": false,\n            \"leadTime\": 264,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23080901,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 0,\n            \"reqName\": \"Request name #23080901\",\n            \"type\": \"Project\",\n            \"plant\": \"P2\",\n            \"reqr\": \"Naruto Uzumaki\",\n            \"pgr\": \"Neji Hyuga\",\n            \"approveDate\": \"2023/08/09\",\n            \"issueDate\": \"2023/08/09\",\n            \"turnOnDate\": \"8/9\",\n            \"UAT1Exp\": \"8/9\",\n            \"UAT1Act\": \"8/9\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/9\",\n            \"UAT2Act\": \"8/9\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"8/12\",\n            \"releaseAct\": \"8/20\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"8/16\",\n            \"monitorAct\": \"8/21\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Done\",\n            \"status\": \"Done\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"doneOnToday\": false,\n            \"leadTime\": 12,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23071701,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 0,\n            \"reqName\": \"Request name #23071701\",\n            \"type\": \"Project\",\n            \"plant\": \"P3\",\n            \"reqr\": \"Sakura Uchiha\",\n            \"pgr\": \"Neji Hyuga\",\n            \"approveDate\": \"2023/07/17\",\n            \"issueDate\": \"2023/07/17\",\n            \"turnOnDate\": \"7/19\",\n            \"UAT1Exp\": \"7/19\",\n            \"UAT1Act\": \"7/18\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"7/23\",\n            \"UAT2Act\": \"7/22\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"7/24\",\n            \"releaseAct\": \"7/25\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"7/26\",\n            \"monitorAct\": \"7/26\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Done\",\n            \"status\": \"Done\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"doneOnToday\": false,\n            \"leadTime\": 7,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23071501,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 0,\n            \"reqName\": \"Request name #23071501\",\n            \"type\": \"Project\",\n            \"plant\": \"P3\",\n            \"reqr\": \"Sakura Uchiha\",\n            \"pgr\": \"Neji Hyuga\",\n            \"approveDate\": \"2023/07/15\",\n            \"issueDate\": \"2023/07/15\",\n            \"turnOnDate\": \"7/15\",\n            \"UAT1Exp\": \"7/16\",\n            \"UAT1Act\": \"7/15\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"7/17\",\n            \"UAT2Act\": \"7/16\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"7/18\",\n            \"releaseAct\": \"7/18\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"7/22\",\n            \"monitorAct\": \"7/22\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Done\",\n            \"status\": \"Done\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"doneOnToday\": false,\n            \"leadTime\": 7,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23080801,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 3,\n            \"reqName\": \"Request name #23080801\",\n            \"type\": \"Project\",\n            \"plant\": \"P1\",\n            \"reqr\": \"Sakura Uchiha\",\n            \"pgr\": \"Bugcat Capoo\",\n            \"approveDate\": \"2023/08/08\",\n            \"issueDate\": \"2023/08/08\",\n            \"turnOnDate\": \"8/1\",\n            \"UAT1Exp\": \"8/8\",\n            \"UAT1Act\": \"8/9\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/30\",\n            \"UAT2Act\": \"\",\n            \"UAT2IsDue\": true,\n            \"releaseExp\": \"7/7\",\n            \"releaseAct\": \"\",\n            \"releaseIsDue\": true,\n            \"monitorExp\": \"7/14\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": true,\n            \"buyoffStatus\": \"Cancel\",\n            \"status\": \"Cancel\",\n            \"cancelDate\": \"2023/08/27\",\n            \"thisWeek\": true,\n            \"cancelOnToday\": false,\n            \"leadTime\": 26,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23080807,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 3,\n            \"reqName\": \"Request name #23080807\",\n            \"type\": \"Project\",\n            \"plant\": \"P1\",\n            \"reqr\": \"Sasuke Uchiha\",\n            \"pgr\": \"Bugcat Capoo\",\n            \"approveDate\": \"2023/08/08\",\n            \"issueDate\": \"2023/08/08\",\n            \"turnOnDate\": \"8/1\",\n            \"UAT1Exp\": \"8/9\",\n            \"UAT1Act\": \"8/9\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/31\",\n            \"UAT2Act\": \"\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"8/31\",\n            \"releaseAct\": \"\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"8/31\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Wait UAT2\",\n            \"status\": \"Proceeding\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"newOnToday\": false,\n            \"leadTime\": 264,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23080902,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 0,\n            \"reqName\": \"Request name #23080902\",\n            \"type\": \"Project\",\n            \"plant\": \"P3\",\n            \"reqr\": \"Naruto Uzumaki\",\n            \"pgr\": \"Bugcat Capoo\",\n            \"approveDate\": \"2023/08/09\",\n            \"issueDate\": \"2023/08/09\",\n            \"turnOnDate\": \"8/2\",\n            \"UAT1Exp\": \"8/8\",\n            \"UAT1Act\": \"8/9\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/9\",\n            \"UAT2Act\": \"8/9\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"8/12\",\n            \"releaseAct\": \"8/16\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"8/15\",\n            \"monitorAct\": \"8/16\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Done\",\n            \"status\": \"Done\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"doneOnToday\": false,\n            \"leadTime\": 14,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23081501,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 0,\n            \"reqName\": \"Request name #23081501\",\n            \"type\": \"OneTime\",\n            \"plant\": \"P3\",\n            \"reqr\": \"Naruto Uzumaki\",\n            \"pgr\": \"Astor Yang\",\n            \"approveDate\": \"2023/08/15\",\n            \"issueDate\": \"2023/08/15\",\n            \"turnOnDate\": \"8/14\",\n            \"UAT1Exp\": \"8/15\",\n            \"UAT1Act\": \"8/15\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/19\",\n            \"UAT2Act\": \"8/29\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"\",\n            \"releaseAct\": \"\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Done\",\n            \"status\": \"Done\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"doneOnToday\": false,\n            \"leadTime\": 15,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23071802,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 10,\n            \"reqName\": \"Request name #23071802\",\n            \"type\": \"Project\",\n            \"plant\": \"P1\",\n            \"reqr\": \"Sasuke Uchiha\",\n            \"pgr\": \"Bugcat Capoo\",\n            \"approveDate\": \"2023/07/18\",\n            \"issueDate\": \"2023/07/18\",\n            \"turnOnDate\": \"7/8\",\n            \"UAT1Exp\": \"7/22\",\n            \"UAT1Act\": \"7/19\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/20\",\n            \"UAT2Act\": \"8/21\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"8/31\",\n            \"releaseAct\": \"\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"8/31\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Wait release\",\n            \"status\": \"Proceeding\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"newOnToday\": false,\n            \"leadTime\": 288,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23072601,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 3,\n            \"reqName\": \"Request name #23072601\",\n            \"type\": \"Project\",\n            \"plant\": \"P3\",\n            \"reqr\": \"Sakura Uchiha\",\n            \"pgr\": \"Bugcat Capoo\",\n            \"approveDate\": \"2023/07/26\",\n            \"issueDate\": \"2023/07/26\",\n            \"turnOnDate\": \"8/2\",\n            \"UAT1Exp\": \"8/7\",\n            \"UAT1Act\": \"7/29\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/16\",\n            \"UAT2Act\": \"8/16\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"8/23\",\n            \"releaseAct\": \"8/26\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"8/31\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Wait monitor 1 lot\",\n            \"status\": \"Proceeding\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"newOnToday\": false,\n            \"leadTime\": 263,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23071101,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 0,\n            \"reqName\": \"Request name #23071101\",\n            \"type\": \"OneTime\",\n            \"plant\": \"P1\",\n            \"reqr\": \"Naruto Uzumaki\",\n            \"pgr\": \"Astor Yang\",\n            \"approveDate\": \"2023/07/11\",\n            \"issueDate\": \"2023/07/11\",\n            \"turnOnDate\": \"7/11\",\n            \"UAT1Exp\": \"7/11\",\n            \"UAT1Act\": \"7/11\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"7/12\",\n            \"UAT2Act\": \"7/12\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"\",\n            \"releaseAct\": \"\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Done\",\n            \"status\": \"Done\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"doneOnToday\": false,\n            \"leadTime\": 1,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23071901,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 1,\n            \"reqName\": \"Request name #23071901\",\n            \"type\": \"Project\",\n            \"plant\": \"P2\",\n            \"reqr\": \"Sasuke Uchiha\",\n            \"pgr\": \"Neji Hyuga\",\n            \"approveDate\": \"2023/07/19\",\n            \"issueDate\": \"2023/07/19\",\n            \"turnOnDate\": \"7/18\",\n            \"UAT1Exp\": \"7/19\",\n            \"UAT1Act\": \"7/19\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"7/23\",\n            \"UAT2Act\": \"7/26\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"7/29\",\n            \"releaseAct\": \"7/30\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"8/5\",\n            \"monitorAct\": \"8/7\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Done\",\n            \"status\": \"Done\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"doneOnToday\": false,\n            \"leadTime\": 20,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23072602,\n            \"rescheduleIT\": 2,\n            \"rescheduleReqr\": 6,\n            \"reqName\": \"Request name #23072602\",\n            \"type\": \"Project\",\n            \"plant\": \"P3\",\n            \"reqr\": \"Sakura Uchiha\",\n            \"pgr\": \"Bugcat Capoo\",\n            \"approveDate\": \"2023/07/26\",\n            \"issueDate\": \"2023/07/26\",\n            \"turnOnDate\": \"8/2\",\n            \"UAT1Exp\": \"8/21\",\n            \"UAT1Act\": \"8/21\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/28\",\n            \"UAT2Act\": \"8/27\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"8/30\",\n            \"releaseAct\": \"8/28\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"7/7\",\n            \"monitorAct\": \"8/29\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Done\",\n            \"status\": \"Done\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"doneOnToday\": false,\n            \"leadTime\": 27,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23082601,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 0,\n            \"reqName\": \"Request name #23082601\",\n            \"type\": \"Project\",\n            \"plant\": \"P2\",\n            \"reqr\": \"Naruto Uzumaki\",\n            \"pgr\": \"Neji Hyuga\",\n            \"approveDate\": \"2023/08/28\",\n            \"issueDate\": \"2023/08/26\",\n            \"turnOnDate\": \"8/28\",\n            \"UAT1Exp\": \"8/28\",\n            \"UAT1Act\": \"8/28\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/29\",\n            \"UAT2Act\": \"8/29\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"7/3\",\n            \"releaseAct\": \"8/30\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"1/31\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": true,\n            \"buyoffStatus\": \"Wait monitor 1 lot\",\n            \"status\": \"Proceeding\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"newOnToday\": false,\n            \"leadTime\": 237,\n            \"reviewDuration\": 0\n        }\n    ]\n}"
+						},
+						{
+							"name": "Get requests by status",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/requests?status=Weekly",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"requests"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "Weekly"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3034"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bda-up/uI2DZ/TwrYjJK+7YAHMXRAJU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Apr 2024 10:02:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Get weekly requests successfully\",\n    \"data\": [\n        {\n            \"reqNo\": 23080806,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 3,\n            \"reqName\": \"Request name #23080806\",\n            \"type\": \"Project\",\n            \"plant\": \"P1\",\n            \"reqr\": \"Sasuke Uchiha\",\n            \"pgr\": \"Bugcat Capoo\",\n            \"approveDate\": \"2023/08/08\",\n            \"issueDate\": \"2023/08/08\",\n            \"turnOnDate\": \"8/1\",\n            \"UAT1Exp\": \"8/9\",\n            \"UAT1Act\": \"8/9\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/31\",\n            \"UAT2Act\": \"\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"8/31\",\n            \"releaseAct\": \"\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"8/31\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Wait UAT2\",\n            \"status\": \"Proceeding\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"newOnToday\": false,\n            \"leadTime\": 264,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23080807,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 3,\n            \"reqName\": \"Request name #23080807\",\n            \"type\": \"Project\",\n            \"plant\": \"P1\",\n            \"reqr\": \"Sasuke Uchiha\",\n            \"pgr\": \"Bugcat Capoo\",\n            \"approveDate\": \"2023/08/08\",\n            \"issueDate\": \"2023/08/08\",\n            \"turnOnDate\": \"8/1\",\n            \"UAT1Exp\": \"8/9\",\n            \"UAT1Act\": \"8/9\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/31\",\n            \"UAT2Act\": \"\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"8/31\",\n            \"releaseAct\": \"\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"8/31\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Wait UAT2\",\n            \"status\": \"Proceeding\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"newOnToday\": false,\n            \"leadTime\": 264,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23071802,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 10,\n            \"reqName\": \"Request name #23071802\",\n            \"type\": \"Project\",\n            \"plant\": \"P1\",\n            \"reqr\": \"Sasuke Uchiha\",\n            \"pgr\": \"Bugcat Capoo\",\n            \"approveDate\": \"2023/07/18\",\n            \"issueDate\": \"2023/07/18\",\n            \"turnOnDate\": \"7/8\",\n            \"UAT1Exp\": \"7/22\",\n            \"UAT1Act\": \"7/19\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/20\",\n            \"UAT2Act\": \"8/21\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"8/31\",\n            \"releaseAct\": \"\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"8/31\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Wait release\",\n            \"status\": \"Proceeding\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"newOnToday\": false,\n            \"leadTime\": 288,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23072601,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 3,\n            \"reqName\": \"Request name #23072601\",\n            \"type\": \"Project\",\n            \"plant\": \"P3\",\n            \"reqr\": \"Sakura Uchiha\",\n            \"pgr\": \"Bugcat Capoo\",\n            \"approveDate\": \"2023/07/26\",\n            \"issueDate\": \"2023/07/26\",\n            \"turnOnDate\": \"8/2\",\n            \"UAT1Exp\": \"8/7\",\n            \"UAT1Act\": \"7/29\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/16\",\n            \"UAT2Act\": \"8/16\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"8/23\",\n            \"releaseAct\": \"8/26\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"8/31\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": false,\n            \"buyoffStatus\": \"Wait monitor 1 lot\",\n            \"status\": \"Proceeding\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"newOnToday\": false,\n            \"leadTime\": 263,\n            \"reviewDuration\": 0\n        },\n        {\n            \"reqNo\": 23082601,\n            \"rescheduleIT\": 0,\n            \"rescheduleReqr\": 0,\n            \"reqName\": \"Request name #23082601\",\n            \"type\": \"Project\",\n            \"plant\": \"P2\",\n            \"reqr\": \"Naruto Uzumaki\",\n            \"pgr\": \"Neji Hyuga\",\n            \"approveDate\": \"2023/08/28\",\n            \"issueDate\": \"2023/08/26\",\n            \"turnOnDate\": \"8/28\",\n            \"UAT1Exp\": \"8/28\",\n            \"UAT1Act\": \"8/28\",\n            \"UAT1IsDue\": false,\n            \"UAT2Exp\": \"8/29\",\n            \"UAT2Act\": \"8/29\",\n            \"UAT2IsDue\": false,\n            \"releaseExp\": \"7/3\",\n            \"releaseAct\": \"8/30\",\n            \"releaseIsDue\": false,\n            \"monitorExp\": \"1/31\",\n            \"monitorAct\": \"\",\n            \"monitorIsDue\": true,\n            \"buyoffStatus\": \"Wait monitor 1 lot\",\n            \"status\": \"Proceeding\",\n            \"cancelDate\": null,\n            \"thisWeek\": true,\n            \"newOnToday\": false,\n            \"leadTime\": 237,\n            \"reviewDuration\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get pending requests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/requests/pendings/101785",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"requests",
+								"pendings",
+								"101785"
+							]
+						},
+						"description": "The request params `:reviewerId` is corresponded an user's `userId`, which is `101785` in this example."
+					},
+					"response": [
+						{
+							"name": "Get all pending requests",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/requests/pendings/101785",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"requests",
+										"pendings",
+										"101785"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4b-mKrx/5ZS+/i0IBUClHx1frd/Fco\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:00:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": [],\n    \"message\": \"Thers's no data pending approval\"\n}"
+						},
+						{
+							"name": "Get pending requests by status",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/requests/pendings/101785?status=Reviewing",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"requests",
+										"pendings",
+										"101785"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "Reviewing"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4b-mKrx/5ZS+/i0IBUClHx1frd/Fco\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:01:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": [],\n    \"message\": \"Thers's no data pending approval\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get one request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/request/23051802",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"request",
+								"23051802"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/request/23051802",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"23051802"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1955"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a3-13KCxKofWVef6sKi7gq3qoEIYU0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:01:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Get request #23051802 data successfully\",\n    \"data\": {\n        \"reqNo\": 23051802,\n        \"reqrId\": \"91495\",\n        \"reqrName\": \"Sasuke Uchiha\",\n        \"pgrId\": \"101000\",\n        \"pgrName\": \"Bugcat Capoo\",\n        \"issueDate\": \"2023-05-18T08:00:00.000Z\",\n        \"status\": \"Proceeding\",\n        \"reqTable\": {\n            \"reqName\": \"93K MD5 Samsung fan out\",\n            \"plant\": \"P1\",\n            \"stage\": \"CP\",\n            \"customer\": \"Samsung\",\n            \"device\": \"All Samsung device\",\n            \"tester\": \"93k\",\n            \"equipment\": \"Prober\",\n            \"system\": \"Linux\",\n            \"purpose\": \"93K MD5 Samsung fan out\"\n        },\n        \"review\": {\n            \"date\": \"2023-05-18T08:00:00.000Z\",\n            \"result\": \"Approved\"\n        },\n        \"cancel\": {},\n        \"turnOnDate\": \"2023-05-08T08:00:00.000Z\",\n        \"type\": \"Project\",\n        \"uploadStatus\": {\n            \"UAT1\": \"Approved\",\n            \"UAT2\": \"Approved\",\n            \"release\": \"Unuploaded\",\n            \"monitor\": \"Unuploaded\"\n        },\n        \"KPI\": {\n            \"UAT1\": {\n                \"reschedule\": 0,\n                \"delay\": 0\n            },\n            \"UAT2\": {\n                \"reschedule\": 4,\n                \"delay\": 0\n            },\n            \"release\": {\n                \"reschedule\": 3,\n                \"delay\": 0\n            },\n            \"monitor\": {\n                \"reschedule\": 3,\n                \"delay\": 0\n            }\n        },\n        \"UAT1Logs\": {\n            \"expDates\": [\n                \"2023-05-22T08:00:00.000Z\"\n            ],\n            \"actDates\": \"2023-05-19T08:00:00.000Z\",\n            \"updateDate\": \"2023-05-19T08:00:00.000Z\",\n            \"uploadFiles\": [\n                {\n                    \"fileName\": \"230519164634058.jpg\",\n                    \"originalName\": \"UAT1_evidence (1).jpg\"\n                },\n                {\n                    \"fileName\": \"230519164634060.pptx\",\n                    \"originalName\": \"UAT1_evidence (2).pptx\"\n                }\n            ],\n            \"result\": \"Approved\",\n            \"reviewDate\": \"2023-05-19T08:00:00.000Z\"\n        },\n        \"UAT2Logs\": {\n            \"expDates\": [\n                \"2023-05-25T08:00:00.000Z\",\n                \"2023-05-30T08:00:00.000Z\",\n                \"2023-06-09T08:00:00.000Z\",\n                \"2023-06-13T08:00:00.000Z\",\n                \"2023-06-20T08:00:00.000Z\"\n            ],\n            \"actDates\": \"2023-06-21T08:00:00.000Z\",\n            \"updateDate\": \"2023-06-21T08:00:00.000Z\",\n            \"uploadFiles\": [\n                {\n                    \"fileName\": \"230621180445271.xlsx\",\n                    \"originalName\": \"UAT2_evidence (1).xlsx\"\n                }\n            ],\n            \"result\": \"Approved\",\n            \"reviewDate\": \"2023-05-21T08:00:00.000Z\"\n        },\n        \"releaseLogs\": {\n            \"uploadFiles\": [],\n            \"expDates\": [\n                \"2023-06-01T08:00:00.000Z\",\n                \"2023-06-13T08:00:00.000Z\",\n                \"2023-06-15T08:00:00.000Z\",\n                \"2024-01-31T08:00:00.000Z\"\n            ]\n        },\n        \"monitorLogs\": {\n            \"uploadFiles\": [],\n            \"expDates\": [\n                \"2023-06-08T08:00:00.000Z\",\n                \"2023-06-16T08:00:00.000Z\",\n                \"2023-06-19T08:00:00.000Z\",\n                \"2024-01-31T08:00:00.000Z\"\n            ]\n        },\n        \"attachedFiles\": [],\n        \"leadTime\": 248,\n        \"reviewDuration\": 0\n    }\n}"
+						},
+						{
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/request/23051810",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"23051810"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-8hVq8M4oO0DmBeou9PJ5aL5lEE4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:02:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"reqNo #23051810 data cannot be found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "New request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"coreTeam\": {\r\n        \"reqr\": {\r\n            \"id\": \"97657\",\r\n            \"name\": \"Naruto Uzumaki\"\r\n        },\r\n        \"pgr\": {\r\n            \"id\": \"101785\",\r\n            \"name\": \"Astor Yang\"\r\n        }\r\n    },\r\n    \"reqTable\": {\r\n        \"reqName\": \"Test\",\r\n        \"plant\": \"P1\",\r\n        \"stage\": \"CP\",\r\n        \"customer\": \"All\",\r\n        \"device\": \"All\",\r\n        \"tester\": \"All\",\r\n        \"equipment\": \"All\",\r\n        \"system\": \"All\",\r\n        \"purpose\": \"Testing\"\r\n    },\r\n    \"attachedFiles\": [\r\n        {\r\n            \"fileName\": \"1703092234581.xlsx\",\r\n            \"originalName\": \"reqm-template.xlsx\"\r\n        },\r\n        {\r\n            \"fileName\": \"1703092234581.pdf\",\r\n            \"originalName\": \"ReqM-working-instrument.pdf\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/request/new",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"request",
+								"new"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"coreTeam\": {\r\n        \"reqr\": {\r\n            \"id\": \"97657\",\r\n            \"name\": \"Naruto Uzumaki\"\r\n        },\r\n        \"pgr\": {\r\n            \"id\": \"101785\",\r\n            \"name\": \"Astor Yang\"\r\n        }\r\n    },\r\n    \"reqTable\": {\r\n        \"reqName\": \"Test\",\r\n        \"plant\": \"P1\",\r\n        \"stage\": \"CP\",\r\n        \"customer\": \"All\",\r\n        \"device\": \"All\",\r\n        \"tester\": \"All\",\r\n        \"equipment\": \"All\",\r\n        \"system\": \"All\",\r\n        \"purpose\": \"Testing\"\r\n    },\r\n    \"attachedFiles\": [\r\n        {\r\n            \"fileName\": \"1703092234581.xlsx\",\r\n            \"originalName\": \"reqm-template.xlsx\"\r\n        },\r\n        {\r\n            \"fileName\": \"1703092234581.pdf\",\r\n            \"originalName\": \"ReqM-working-instrument.pdf\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/new",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"new"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"49-08I5Lp2jevwgeQFNxRK3pH9WKuw\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 13:27:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Adding request #24011101 successfully\"\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //lack required values in request body, which is `coreTeam` in this example.\r\n    \"reqTable\": {\r\n        \"reqName\": \"Test\",\r\n        \"plant\": \"P1\",\r\n        \"stage\": \"CP\",\r\n        \"customer\": \"All\",\r\n        \"device\": \"All\",\r\n        \"tester\": \"All\",\r\n        \"equipment\": \"All\",\r\n        \"system\": \"All\",\r\n        \"purpose\": \"Testing\"\r\n    },\r\n    \"attachedFiles\": [\r\n        {\r\n            \"fileName\": \"1703092234581.xlsx\",\r\n            \"originalName\": \"reqm-template.xlsx\"\r\n        },\r\n        {\r\n            \"fileName\": \"1703092234581.pdf\",\r\n            \"originalName\": \"ReqM-working-instrument.pdf\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/new",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"new"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "68"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"44-hTdw6LKl0BD/jMa2YqYgVz50Uuw\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 13:55:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"coreTeam cannot be null or undefined\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Review request",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"result\": \"Approved\",\r\n    \"type\": \"OneTime\",\r\n    \"schedule\": {\r\n        \"turnOnDate\": \"2024-01-31T00:00:00.001\",\r\n        \"UAT1\": \"2024-01-31T00:00:00.001\",\r\n        \"UAT2\": \"2024-01-31T00:00:00.001\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/request/review/24011101",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"request",
+								"review",
+								"24011101"
+							]
+						},
+						"description": "Please use the `POST` api `New IT-request` before test this api.\n\nThe request params `reqNo` will be generated when you got a `success` response after called the `POST` api `New IT-request.`"
+					},
+					"response": [
+						{
+							"name": "Approve OneTime request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"result\": \"Approved\",\r\n    \"type\": \"OneTime\",\r\n    \"schedule\": {\r\n        \"turnOnDate\": \"2024-01-31T00:00:00.000Z\",\r\n        \"UAT1\": \"2024-01-31T00:00:00.000Z\",\r\n        \"UAT2\": \"2024-01-31T00:00:00.000Z\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/review/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"review",
+										"24011101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"49-LsHHASMgbEOp2dyv2IT2yb750vo\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 13:57:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Review request #24011101 successfully\"\n}"
+						},
+						{
+							"name": "Approve Project request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"result\": \"Approved\",\r\n    \"type\": \"Project\",\r\n    \"schedule\": {\r\n        \"turnOnDate\": \"2024-01-31T00:00:00.000Z\",\r\n        \"UAT1\": \"2024-01-31T00:00:00.000Z\",\r\n        \"UAT2\": \"2024-01-31T00:00:00.000Z\",\r\n        \"release\": \"2024-01-31T00:00:00.000Z\",\r\n        \"monitor\": \"2024-01-31T00:00:00.000Z\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/review/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"review",
+										"24011101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"49-LsHHASMgbEOp2dyv2IT2yb750vo\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 13:59:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Review request #24011101 successfully\"\n}"
+						},
+						{
+							"name": "Reject this request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"result\": \"Rejected\",\r\n    \"message\": \"The reason why you rejected this request\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/review/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"review",
+										"24011101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"49-LsHHASMgbEOp2dyv2IT2yb750vo\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:00:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Review request #24011101 successfully\"\n}"
+						},
+						{
+							"name": "Return this request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"result\": \"Returned\",\r\n    \"message\": \"The reason why you returned this request\"   //Optional\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/review/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"review",
+										"24011101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"49-LsHHASMgbEOp2dyv2IT2yb750vo\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:50:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Review request #24011101 successfully\"\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //lack required values in request body, which is `result` in this example.\r\n    \"type\": \"OneTime\",\r\n    \"schedule\": {\r\n        \"turnOnDate\": \"2024-01-31T00:00:00.000Z\",\r\n        \"UAT1\": \"2024-01-31T00:00:00.000Z\",\r\n        \"UAT2\": \"2024-01-31T00:00:00.000Z\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/review/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"review",
+										"24011101"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "66"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"42-w/UzzYYflDikljhjF0osXmvYjrk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:52:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"result cannot be null or undefined\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit request",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"coreTeam\": {\r\n        \"reqr\": {\r\n            \"id\": \"97657\",\r\n            \"name\": \"Naruto Uzumaki\"\r\n        },\r\n        \"pgr\": {\r\n            \"id\": \"101000\",\r\n            \"name\": \"Bugcat Capoo\"\r\n        }\r\n    },\r\n    \"reqTable\": {\r\n        \"reqName\": \"Test editted\",\r\n        \"plant\": \"P3\",\r\n        \"stage\": \"FT\",\r\n        \"customer\": \"All\",\r\n        \"device\": \"All\",\r\n        \"tester\": \"All\",\r\n        \"equipment\": \"All\",\r\n        \"system\": \"All\",\r\n        \"purpose\": \"Testing for editting a request.\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/request/edit/24011101",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"request",
+								"edit",
+								"24011101"
+							]
+						},
+						"description": "Please use the `POST` api `New IT-request` before test this api.\n\nThe request params `reqNo` will be generated when you got a `success` response after called the `POST` api `New IT-request.`"
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"coreTeam\": {\r\n        \"reqr\": {\r\n            \"id\": \"97657\",\r\n            \"name\": \"Naruto Uzumaki\"\r\n        },\r\n        \"pgr\": {\r\n            \"id\": \"101000\",\r\n            \"name\": \"Bugcat Capoo\"\r\n        }\r\n    },\r\n    \"reqTable\": {\r\n        \"reqName\": \"Test editted\",\r\n        \"plant\": \"P3\",\r\n        \"stage\": \"FT\",\r\n        \"customer\": \"All\",\r\n        \"device\": \"All\",\r\n        \"tester\": \"All\",\r\n        \"equipment\": \"All\",\r\n        \"system\": \"All\",\r\n        \"purpose\": \"Testing for editting an request.\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/edit/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"edit",
+										"24011101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "71"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"47-tL5i2M2wosl00gidUB7ajCMKoZs\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:01:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Edit request #24011101 successfully\"\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //lack some required value, which is `coreTeam` in this example.\r\n    \"reqTable\": {\r\n        \"reqName\": \"Test editted\",\r\n        \"plant\": \"P3\",\r\n        \"stage\": \"FT\",\r\n        \"customer\": \"All\",\r\n        \"device\": \"All\",\r\n        \"tester\": \"All\",\r\n        \"equipment\": \"All\",\r\n        \"system\": \"All\",\r\n        \"purpose\": \"Testing for editting an request.\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/edit/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"edit",
+										"24011101"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "68"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"44-hTdw6LKl0BD/jMa2YqYgVz50Uuw\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:02:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"coreTeam cannot be null or undefined\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Re-schedule request",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"OneTime\",\r\n    \"UAT1\": \"2024-02-29T00:00:00.001\",\r\n    \"UAT2\": \"2024-02-29T00:00:00.001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/request/reschedule/24011101",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"request",
+								"reschedule",
+								"24011101"
+							]
+						},
+						"description": "Please use the `POST` api `New IT-request` before test this api.\n\nThe request params `reqNo` will be generated when you got a `success` response after called the `POST` api `New IT-request.`"
+					},
+					"response": [
+						{
+							"name": "OneTime type request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"OneTime\",\r\n    \"UAT1\": \"2024-02-29T00:00:00.001\",\r\n    \"UAT2\": \"2024-02-29T00:00:00.001\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/reschedule/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"reschedule",
+										"24011101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39-1WFZhdQ66xSotsokRZ5tWaRTXvc\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:03:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Re-schedule successfully\"\n}"
+						},
+						{
+							"name": "Project type request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"Project\",\r\n    \"UAT1\": \"2024-02-29T00:00:00.001\",\r\n    \"UAT2\": \"2024-02-29T00:00:00.001\",\r\n    \"release\": \"2024-02-29T00:00:00.001\",\r\n    \"monitor\": \"2024-02-29T00:00:00.001\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/reschedule/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"reschedule",
+										"24011101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39-1WFZhdQ66xSotsokRZ5tWaRTXvc\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:05:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Re-schedule successfully\"\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //lack some required values, which is `type` in this example.\r\n    \"UAT1\": \"2024-02-29T00:00:00.001\",\r\n    \"UAT2\": \"2024-02-29T00:00:00.001\",\r\n    \"release\": \"2024-02-29T00:00:00.001\",\r\n    \"monitor\": \"2024-02-29T00:00:00.001\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/reschedule/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"reschedule",
+										"24011101"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "64"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"40-rqE8vrKRRS/MAMBdjfIs6LOVZJM\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:06:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"type cannot be null or undefined\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update request evidence",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"step\": \"UAT1\",\r\n    \"updateDate\": \"2024-01-11T00:00:00.000Z\",\r\n    \"uploadFiles\": [\r\n        {\r\n            \"fileName\": \"1704982330362.png\",\r\n            \"originalName\": \"UAT1.png\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/request/evidence/24011101",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"request",
+								"evidence",
+								"24011101"
+							]
+						},
+						"description": "Please use the `POST` api `New IT-request` before test this api.\n\nThe request params `reqNo` will be generated when you got a `success` response after called the `POST` api `New IT-request.`"
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"step\": \"UAT1\",\r\n    \"updateDate\": \"2024-01-11T00:00:00.000Z\",\r\n    \"uploadFiles\": [\r\n        {\r\n            \"fileName\": \"1704982330362.png\",\r\n            \"originalName\": \"UAT1.png\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/evidence/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"evidence",
+										"24011101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-WG8uvzhW53SIAdDjzGeMMyLERps\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:13:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Update successfully\"\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //lack required values in request body, which is `step` in this example.\r\n    \"updateDate\": \"2024-01-11T00:00:00.000Z\",\r\n    \"uploadFiles\": [\r\n        {\r\n            \"fileName\": \"1704982330362.png\",\r\n            \"originalName\": \"UAT1.png\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/evidence/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"evidence",
+										"24011101"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "64"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"40-pKTHqTjE2CHTo4nVRvj7FaI4+ew\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:15:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"step cannot be null or undefined\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Review request evidence",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"step\": \"UAT1\",\r\n    \"reviewerReply\": {\r\n        \"result\": \"Approved\",\r\n        \"reviewDate\": \"2024-01-12T00:00:00.000Z\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/request/approve/24011101",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"request",
+								"approve",
+								"24011101"
+							]
+						},
+						"description": "Please use the `POST` api `New IT-request` before test this api.\n\nThe request params `reqNo` will be generated when you got a `success` response after called the `POST` api `New IT-request.`"
+					},
+					"response": [
+						{
+							"name": "Approve request evidence",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"step\": \"UAT1\",\r\n    \"reviewerReply\": {\r\n        \"result\": \"Approved\",\r\n        \"reviewDate\": \"2024-01-12T00:00:00.000Z\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/approve/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"approve",
+										"24011101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "70"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"46-bE3sJSq44SKQf4fkiRMFXBzFdvk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:17:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Review uploaded evidence successfully\"\n}"
+						},
+						{
+							"name": "Reject request evidence",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"step\": \"UAT1\",\r\n    \"reviewerReply\": {\r\n        \"result\": \"Rejected\",\r\n        \"reviewDate\": \"2024-01-01T00:00:00.000Z\",\r\n        \"comments\": \"Test rejectting evidence.\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/approve/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"approve",
+										"24011101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "70"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"46-bE3sJSq44SKQf4fkiRMFXBzFdvk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:17:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Review uploaded evidence successfully\"\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //lack required values in request body, which is `step` in this example.\r\n    \"reviewerReply\": {\r\n        \"result\": \"Approved\",\r\n        \"reviewDate\": \"2024-01-12T00:00:00.000Z\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/approve/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"approve",
+										"24011101"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "64"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"40-pKTHqTjE2CHTo4nVRvj7FaI4+ew\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:18:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"step cannot be null or undefined\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Apply cancellation",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"applyDate\": \"2024-01-11T00:00:00.000Z\",\r\n    \"applicantName\": \"Naruto Uzumaki\",\r\n    \"applicantId\": \"97657\",\r\n    \"reason\": \"Testing for cancellation.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/request/apply-cancellation/24011101",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"request",
+								"apply-cancellation",
+								"24011101"
+							]
+						},
+						"description": "Please use the `POST` api `New IT-request` before test this api.\n\nThe request params `reqNo` will be generated when you got a `success` response after called the `POST` api `New IT-request.`"
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"applyDate\": \"2024-01-11T00:00:00.000Z\",\r\n    \"applicantName\": \"Naruto Uzumaki\",\r\n    \"applicantId\": \"97657\",\r\n    \"reason\": \"Testing for cancellation.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/apply-cancellation/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"apply-cancellation",
+										"24011101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "64"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"40-fqFCgIRr9F0kWgr/kQp4c8taFbk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:19:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Apply cancellation successfully\"\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //lack required values in request body, which is `applyDate` in this example.\r\n    \"applicantName\": \"Naruto Uzumaki\",\r\n    \"applicantId\": \"97657\",\r\n    \"reason\": \"Testing for cancellation.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/apply-cancellation/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"apply-cancellation",
+										"24011101"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "69"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"45-mDRjDgLFCUWy7nC0INC47qAYRg8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:22:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"applyDate cannot be null or undefined\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Review cancellation",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"result\": \"Approved\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/request/review-cancellation/24011101",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"request",
+								"review-cancellation",
+								"24011101"
+							]
+						},
+						"description": "Please use the `POST` api `New IT-request` before test this api.\n\nThe request params `reqNo` will be generated when you got a `success` response after called the `POST` api `New IT-request.`"
+					},
+					"response": [
+						{
+							"name": "Approve cancellation",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"result\": \"Approved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/review-cancellation/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"review-cancellation",
+										"24011101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"41-dXOsWNGv7XxEsIPEy5TyosKcsyI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:30:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Review cancellation successfully\"\n}"
+						},
+						{
+							"name": "Reject cancellation",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"result\": \"Rejected\",\r\n    \"comments\": \"Testing for rejectting a cancellation.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/request/review-cancellation/24011101",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"request",
+										"review-cancellation",
+										"24011101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"41-dXOsWNGv7XxEsIPEy5TyosKcsyI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 14:31:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Review cancellation successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Summary",
+			"item": [
+				{
+					"name": "Get all request summary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/summary/requests/1704979198494",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"summary",
+								"requests",
+								"1704979198494"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/summary/requests/1704979198494",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"summary",
+										"requests",
+										"1704979198494"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "13546"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34ea-nIE6i7ps+jE+m6hB8ZNiLMuVf6w\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 11 Jan 2024 15:36:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Get summary data successfully\",\n    \"data\": [\n        {\n            \"P1\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 0,\n                \"done\": 1,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 0,\n                \"reviewing\": 0,\n                \"prcd\": 0,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 0,\n                \"done\": 1,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202319\",\n            \"startingDate\": \"2023-05-08T00:00:00.001Z\",\n            \"total\": 2,\n            \"reviewing\": 0,\n            \"prcd\": 0,\n            \"done\": 2,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 2,\n                \"reviewing\": 0,\n                \"prcd\": 2,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202320\",\n            \"startingDate\": \"2023-05-15T00:00:00.001Z\",\n            \"total\": 4,\n            \"reviewing\": 0,\n            \"prcd\": 4,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 4,\n                \"reviewing\": 0,\n                \"prcd\": 2,\n                \"done\": 2,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202321\",\n            \"startingDate\": \"2023-05-22T00:00:00.001Z\",\n            \"total\": 6,\n            \"reviewing\": 0,\n            \"prcd\": 4,\n            \"done\": 2,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 2,\n                \"reviewing\": 0,\n                \"prcd\": 2,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202322\",\n            \"startingDate\": \"2023-05-29T00:00:00.001Z\",\n            \"total\": 4,\n            \"reviewing\": 0,\n            \"prcd\": 4,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 4,\n                \"reviewing\": 0,\n                \"prcd\": 4,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 2,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 1,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202323\",\n            \"startingDate\": \"2023-06-05T00:00:00.001Z\",\n            \"total\": 9,\n            \"reviewing\": 0,\n            \"prcd\": 8,\n            \"done\": 1,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 4,\n                \"reviewing\": 0,\n                \"prcd\": 4,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 1,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 4,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 1,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202324\",\n            \"startingDate\": \"2023-06-12T00:00:00.001Z\",\n            \"total\": 9,\n            \"reviewing\": 0,\n            \"prcd\": 8,\n            \"done\": 1,\n            \"cancel\": 0,\n            \"delay\": 1,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 4,\n                \"reviewing\": 0,\n                \"prcd\": 4,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 0,\n                \"done\": 1,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 2,\n                \"rejected\": 0\n            },\n            \"week\": \"202325\",\n            \"startingDate\": \"2023-06-19T00:00:00.001Z\",\n            \"total\": 8,\n            \"reviewing\": 0,\n            \"prcd\": 7,\n            \"done\": 1,\n            \"cancel\": 0,\n            \"delay\": 2,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 4,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 1,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 2,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202326\",\n            \"startingDate\": \"2023-06-26T00:00:00.001Z\",\n            \"total\": 8,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 2,\n            \"cancel\": 1,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202327\",\n            \"startingDate\": \"2023-07-03T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202328\",\n            \"startingDate\": \"2023-07-10T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202329\",\n            \"startingDate\": \"2023-07-17T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202330\",\n            \"startingDate\": \"2023-07-24T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202331\",\n            \"startingDate\": \"2023-07-31T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202332\",\n            \"startingDate\": \"2023-08-07T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202333\",\n            \"startingDate\": \"2023-08-14T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202334\",\n            \"startingDate\": \"2023-08-21T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202335\",\n            \"startingDate\": \"2023-08-28T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202336\",\n            \"startingDate\": \"2023-09-04T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202337\",\n            \"startingDate\": \"2023-09-11T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202338\",\n            \"startingDate\": \"2023-09-18T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202339\",\n            \"startingDate\": \"2023-09-25T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202340\",\n            \"startingDate\": \"2023-10-02T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202341\",\n            \"startingDate\": \"2023-10-09T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202342\",\n            \"startingDate\": \"2023-10-16T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202343\",\n            \"startingDate\": \"2023-10-23T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202344\",\n            \"startingDate\": \"2023-10-30T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202345\",\n            \"startingDate\": \"2023-11-06T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202346\",\n            \"startingDate\": \"2023-11-13T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202347\",\n            \"startingDate\": \"2023-11-20T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202348\",\n            \"startingDate\": \"2023-11-27T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202349\",\n            \"startingDate\": \"2023-12-04T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202350\",\n            \"startingDate\": \"2023-12-11T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202351\",\n            \"startingDate\": \"2023-12-18T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202352\",\n            \"startingDate\": \"2023-12-25T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        },\n        {\n            \"P1\": {\n                \"total\": 3,\n                \"reviewing\": 0,\n                \"prcd\": 3,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P2\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"P3\": {\n                \"total\": 1,\n                \"reviewing\": 0,\n                \"prcd\": 1,\n                \"done\": 0,\n                \"cancel\": 0,\n                \"delay\": 0,\n                \"rejected\": 0\n            },\n            \"week\": \"202401\",\n            \"startingDate\": \"2024-01-01T00:00:00.001Z\",\n            \"total\": 5,\n            \"reviewing\": 0,\n            \"prcd\": 5,\n            \"done\": 0,\n            \"cancel\": 0,\n            \"delay\": 0,\n            \"rejected\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "http://127.0.0.1:7000"
+		}
+	]
+}
