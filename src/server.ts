@@ -7,6 +7,8 @@ import cors from 'cors';
 import morgan from 'morgan';
 import * as path from 'path';
 import * as http from 'http';
+import * as https from 'https';
+import fs from 'fs';
 const envPath = path.resolve(__dirname, '..', 'config.env');
 envConfig({ path: envPath });
 
@@ -27,8 +29,15 @@ const ENV: string = getEnv('NODE_ENV');
 const PORT: number = getEnv('PORT') ? Number.parseInt(getEnv('PORT')) : 6000;
 const ROOT_PATH: string = path.resolve(__dirname, '..');
 const UPLOAD_PATH: string = ENV === 'prod' ? path.join(ROOT_PATH, '/public') : getEnv('UPLOAD_PATH_DEV');
+const KEY_PATH = path.join(ROOT_PATH, '/src/server/server.key');
+const CERT_PATH = path.join(ROOT_PATH, '/src/server/server.crt');
 
 export class SetupServer extends Server {
+  private isHTTPS = fs.existsSync(KEY_PATH) && fs.existsSync(CERT_PATH) ? true : false;
+  private options? = !this.isHTTPS ? undefined : {
+    key: fs.readFileSync(KEY_PATH),
+    cert: fs.readFileSync(CERT_PATH),
+  };
   private server?: http.Server;
   constructor(private port = PORT) {
     super();
@@ -108,7 +117,13 @@ export class SetupServer extends Server {
   }
 
   public start(): void {
+    console.log(`[Info] Using the ${this.isHTTPS ? 'HTTPS' : 'HTTP'} server`);
     const SERVER_INFO = `[Info] Switch to ${ENV} mode, server is listening on ${this.port}`;
-    this.server = this.app.listen(this.port, () => console.log(SERVER_INFO));
+    if (this.isHTTPS) {
+      this.server = https.createServer(this.options!, this.app);
+      this.server.listen(this.port, () => console.log(SERVER_INFO));
+    } else {
+      this.server = this.app.listen(this.port, () => console.log(SERVER_INFO));
+    }
   }
 }
