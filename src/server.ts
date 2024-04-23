@@ -28,7 +28,7 @@ import doScheduleJobs from '@/schedule/cron';
 const ENV: string = getEnv('NODE_ENV');
 const PORT: number = getEnv('PORT') ? Number.parseInt(getEnv('PORT')) : 6000;
 const ROOT_PATH: string = path.resolve(__dirname, '..');
-const UPLOAD_PATH: string = ENV === 'prod' ? path.join(ROOT_PATH, '/public') : getEnv('UPLOAD_PATH_DEV');
+const UPLOAD_PATH: string = ENV === 'prod' ? getEnv('UPLOAD_PATH_PROD') : getEnv('UPLOAD_PATH_DEV');
 const KEY_PATH = path.join(ROOT_PATH, '/src/server/server.key');
 const CERT_PATH = path.join(ROOT_PATH, '/src/server/server.crt');
 

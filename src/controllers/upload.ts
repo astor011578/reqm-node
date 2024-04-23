@@ -1,4 +1,3 @@
-import path from 'path';
 import { Request, Response } from 'express';
 import StatusCodes from 'http-status-codes';
 import multer, { MulterError } from 'multer';
@@ -7,8 +6,7 @@ import { getEnv } from '@/util/env-variables';
 import { CustomError } from '@/errors/index';
 
 const ENV = getEnv('NODE_ENV');
-const ROOT_PATH: string = path.resolve(__dirname, '..');
-const UPLOAD_PATH = ENV === 'prod' ? path.join(ROOT_PATH, '/public') : getEnv('UPLOAD_PATH_DEV');
+const UPLOAD_PATH = ENV === 'prod' ? getEnv('UPLOAD_PATH_PROD') : getEnv('UPLOAD_PATH_DEV');
 let destination: string;
 
 /**
